@@ -1,0 +1,30 @@
+# todos
+
+voraussetzugen:
+* raspian installiert
+* docker installiert (link zur doku)
+* docker-compose installiert (link zur doku)
+
+##
+
+Doku zur Nutzung dieses Codes
+
+
+* Konfigurieren Sie X, Y und Z
+  * Adapter auflisten, die installiert werden sollen, z.B. backitup-v1.0.0
+
+
+```
+docker-compose up -d
+```
+
+
+* influx einrichten, credentials an iobroker und grafana geben
+* grafana mit influx verbinden
+  * datasource einrichten
+* iobroker mit influx verbinden
+* installation adapter
+  * iobroker add influxdb --host iobroker
+  * iobroker add backitup --host iobroker
+
+* backitup restore
